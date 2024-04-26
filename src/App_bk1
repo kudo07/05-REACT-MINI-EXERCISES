@@ -1,0 +1,38 @@
+//*1-props
+// import TodoListItem from './1-props/TodoListItem';
+// import user from './1-props/user.json';
+// import NameFunc from './1-props/NameFunc'
+// *2-User-Card
+// import UserCard from './2-User-Card/UserCard';
+// import card from './2-User-Card/card.json';
+
+import Counter from './3-State/Counter';
+import UserState from './3-State/UserState';
+function App() {
+  return (
+    //*1-props
+    // <div>
+    //   <NameFunc>
+    //     <span style={{ background: 'red' }}>This is from NameFunc</span>
+    //   </NameFunc>
+    //   <TodoListItem isCompleted>
+    //     <span style={{ color: 'orange' }}>this is from TodoListItem</span>
+    //   </TodoListItem>
+    //   <h1>{JSON.stringify(user)}</h1>
+    // </div>
+
+    //* 2-User-Card
+    // <div>
+    //   <UserCard name={card.namae} age={card.name} number={card.phone} />
+    // </div>
+
+    // *3-State
+    // <div>
+    //   <UserState name="first" />
+    //   <Counter />
+    // </div>
+  );
+}
+
+export default App;
+// till event listenres
