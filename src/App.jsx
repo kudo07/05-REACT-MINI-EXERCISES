@@ -22,6 +22,9 @@ import MemoA from './46-18-USE-MEMO-HOOK/MemoA';
 import UseCallback from './47-19-USE-CALLBACK/UseCallback';
 import CustomHooks from './48-20-CUSTOM-HOOKS/CustomHooks';
 import CustomFetch from './49-21-USEFETCH-HOOK-CUSTOM/CustomFetch';
+import UseArrayHook from './50-22-USE-ARRAYHOOK/UseArrayHook';
+import UseLocalStorage from './54-23-USELOCALSTORAGE/UseLocalStorage';
+import Form from './55-24-FORM-BASIS/Form';
 function App() {
   // 1-return <Called />;
   // 3-return <InputList />;
@@ -46,7 +49,10 @@ function App() {
   // 18-return <MemoA />;
   // 19-return <UseCallback />;
   //20- return <CustomHooks />;
-  return <CustomFetch />;
+  //21- return <CustomFetch />;
+  //22- return <UseArrayHook />;
+  // 23- return <UseLocalStorage />;
+  return <Form />;
 }
 
 export default App;
