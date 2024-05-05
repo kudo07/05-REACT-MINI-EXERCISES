@@ -26,6 +26,7 @@ import UseArrayHook from './50-22-USE-ARRAYHOOK/UseArrayHook';
 import UseLocalStorage from './54-23-USELOCALSTORAGE/UseLocalStorage';
 import Form from './55-24-FORM-BASIS/Form';
 import Table from './52-PDF-GENERATOR/Table';
+import FileUpload from './51-DRAG-N-DROP/FileUpload';
 function App() {
   // 1-return <Called />;
   // 3-return <InputList />;
@@ -53,8 +54,9 @@ function App() {
   //21- return <CustomFetch />;
   //22- return <UseArrayHook />;
   // 23- return <UseLocalStorage />;
-  // return <Form />;
-  return <Table />;
+  //24-FORM return <Form />;
+  //52 return <Table />;
+  //51- return <FileUpload />;
 }
 
 export default App;
