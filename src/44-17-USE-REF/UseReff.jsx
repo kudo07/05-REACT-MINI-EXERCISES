@@ -30,6 +30,7 @@ const UseReff = () => {
         Name:
         <input value={name} onChange={(e) => setName(e.target.value)} />
         <button onClick={() => (nameRef.current = Math.random())}>
+          {/* ref take the final value after giving input doesnt take immediately, state take immediately which causes re-render */}
           ChangeRef
         </button>
         <button onClick={() => console.log(nameRef.current)}>PrintRef</button>

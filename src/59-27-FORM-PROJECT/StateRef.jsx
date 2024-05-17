@@ -1,6 +1,6 @@
 import { useRef, useState } from 'react';
 import { checkEmail, checkPassword } from './validation';
-
+// in our case our function is defined outside the component so we didnt include the depencendy in the useMemo
 const StateRef = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
@@ -26,7 +26,7 @@ const StateRef = () => {
     });
   };
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className="form">
       <div className={`form-group ${emailErrors.length > 0 ? 'error' : ''}`}>
         <label htmlFor="email" className="label">
           Email:
@@ -38,7 +38,11 @@ const StateRef = () => {
           ref={emailRef}
           onChange={
             isAfterFirstSubmit
-              ? (e) => setEmailErrors(checkEmail(e.target.value))
+              ? // when the input changes we want to change the error also while taking inpuit
+                // update errors when changes the input
+                // only after the first submit
+                // every time changes the input it cause to run this function after submit the first time not on 0 time
+                (e) => setEmailErrors(checkEmail(e.target.value))
               : undefined
           }
         />

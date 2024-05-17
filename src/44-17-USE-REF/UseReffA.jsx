@@ -22,6 +22,7 @@ const UseReffA = () => {
         <input
           ref={inputRef}
           value={name}
+          // onChange is taking the e.target.value
           onChange={(e) => setName(e.target.value)}
         />
       </label>

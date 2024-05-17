@@ -14,6 +14,7 @@ const Forms = () => {
   const passwordErrors = useMemo(() => {
     return isAfterFirstSubmit ? checkPassword(password) : [];
   }, [isAfterFirstSubmit, password]);
+  // so whenever the password changes it doesnt recall the email function and vice versa
   //
   function onSubmitt(e) {
     e.preventDefault();
