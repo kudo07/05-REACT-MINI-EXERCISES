@@ -30,6 +30,9 @@ import FileUpload from './51-DRAG-N-DROP/FileUpload';
 import OneWay from './56-25-ONE-WAY-DATA/OneWay';
 import Combine from './57-26-USESTATE-VS-USEREF/Combine';
 import FormProject from './59-27-FORM-PROJECT/FormProject';
+import Library from './60-28-FORM-LIBRARIES/Library';
+import FormOr from './61-29-FORM-IMPLEMENTATION/BEFORE/FormOr';
+import FormOrA from './61-29-FORM-IMPLEMENTATION/AFTER/FormOrA';
 function App() {
   // 1-return <Called />;
   // 3-return <InputList />;
@@ -62,7 +65,10 @@ function App() {
   //52 return <Table />;
   //25- return <OneWay />;
   //26-return <Combine />;
-  return <FormProject />;
+  // 27- return <FormProject />;
+  //28- return <Library />;
+  // 29- return <FormOr />;
+  return <FormOrA />;
 }
 
 export default App;
