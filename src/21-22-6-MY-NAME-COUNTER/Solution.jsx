@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const Solution = () => {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');

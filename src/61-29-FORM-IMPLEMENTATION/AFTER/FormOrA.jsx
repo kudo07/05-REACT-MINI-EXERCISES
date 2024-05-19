@@ -11,16 +11,20 @@ const COUNTRY_OPTIONS = [
 const FormOrA = () => {
   const {
     register,
+    // register our inputs which tracks our inputs along with the code
+    // the register method
     handleSubmit,
+    // the handleSublit take care all the necesary things after wrap outside the onSubmit function
     formState: { errors },
     control,
   } = useForm();
-  //
+  //control inputs
   const { field: countryField } = useController({
     name: 'country',
     control,
     rules: { required: { value: true, message: 'Required' } },
   });
+  //
   const onSubmit = (data) => {
     console.log(data);
     alert('success');
@@ -36,6 +40,9 @@ const FormOrA = () => {
           type="email"
           id="email"
           {...register('email', {
+            // uses the name which pass down into the field it uses it as the unique id for the validation
+            // the register method gives us the tons of method onChange on Blur
+            //  so thats why we spread it out
             required: { value: true, message: 'Required' },
             validate: (value) => {
               if (!value.endsWith('@gmail.com')) {

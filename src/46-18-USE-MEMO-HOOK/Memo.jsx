@@ -11,10 +11,8 @@ const Memo = () => {
   console.log(filteredList.length);
   return (
     <div style={{ background: isDarkMode ? '#333' : 'white' }}>
-      <label>
-        Query:
-        <input value={query} onChange={(e) => setQuery(e.target.value)} />
-      </label>
+      <label>Query:</label>
+      <input value={query} onChange={(e) => setQuery(e.target.value)} />
       <br />
       <label>
         <input
@@ -27,5 +25,7 @@ const Memo = () => {
     </div>
   );
 };
+// when write the input using useMemo re-render didnt happen only the time of filtered list changes it render only the respected vaiable
+// updation and renders not every single time renders
 
 export default Memo;
