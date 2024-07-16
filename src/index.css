@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom classes for animations and enhancements */
+.carousel-enterprise {
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-enterprise img {
+  border-radius: 8px;
+}
+
+.carousel-enterprise button {
+  transition: all 0.3s ease;
+}
+
+.carousel-enterprise button:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.1);
+}
+
+.carousel-enterprise-dots button {
+  width: 10px;
+  height: 10px;
+  margin: 0 4px;
+  border-radius: 50%;
+  background-color: #c0c0c0;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-enterprise-dots button.active {
+  background-color: #000;
+}

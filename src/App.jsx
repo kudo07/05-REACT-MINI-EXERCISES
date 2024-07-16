@@ -34,6 +34,12 @@ import Library from './60-28-FORM-LIBRARIES/Library';
 import FormOr from './61-29-FORM-IMPLEMENTATION/BEFORE/FormOr';
 import FormOrA from './61-29-FORM-IMPLEMENTATION/AFTER/FormOrA';
 import Parent from './62-23-VIRTUAL-DOM/Parent';
+import UseReducer from './64-62-25-USEREDUCER/UseReducer';
+import Index from './65-REACT-HOOK-FORM/Index';
+import ReactHookForm from './65-REACT-HOOK-FORM/ReactHookForm';
+import Crousel from './66-CROUSEL/Crousel';
+import './index.css';
+import Forms from './59-27-FORM-PROJECT/Forms';
 function App() {
   // 1-return <Called />;
   // 3-return <InputList />;
@@ -67,11 +73,17 @@ function App() {
   //25- return <OneWay />;
   //26-return <Combine />;
   // 27- return <FormProject />;
+  // 59-27 return <Forms />;
   //28- return <Library />;
   // 29- return <FormOr />;
   //29- return <FormOrA />;
-  // 62-23 return <Parent />;
-  return;
+  // 61-29- return  return <FormOrA />;
+  // 62-23
+  // 62-23- return <Parent />;
+  // return <UseReducer />;
+  // 65-REACT-HOOK-return <Index />;
+  // 65 return <ReactHookForm />;
+  // 66 return <Crousel />;
 }
 
 export default App;

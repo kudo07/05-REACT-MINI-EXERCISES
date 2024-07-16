@@ -5,7 +5,7 @@ const StateRef = () => {
   const emailRef = useRef();
   const passwordRef = useRef();
   const [toggle, setToggle] = useState(false);
-  //
+  //we care here about re-rendering here
   const [emailErrors, setEmailErrors] = useState([]);
   const [passwordErrors, setPasswordErrors] = useState([]);
   const [isAfterFirstSubmit, setIsAfterSubmit] = useState(false);

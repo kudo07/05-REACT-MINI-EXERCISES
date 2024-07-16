@@ -21,7 +21,9 @@ const Counter = () => {
   return (
     <div>
       {/* <button onClick={handleCounter()}></button> */}
-      {/* it shows the error too many re-renders infinite loop as the it () it runs the function in every renders that why we use the callback function */}
+      {/* it shows the error too many re-renders infinite loop as the it () it runs the function in every renders that why we use the callback function
+      it makes the function invoke every time
+      */}
       <button onClick={handleCounter}>counter</button>
       {/* works fine */}
       <p>counter-{counter}</p>

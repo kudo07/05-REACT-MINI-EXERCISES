@@ -4,6 +4,7 @@ const Combine = () => {
   const nameRef = useRef();
   useEffect(() => {
     console.log('render');
+    // not render every time in the useRefs
   });
   //
   // const [inp, setInp] = useState('');
@@ -13,6 +14,7 @@ const Combine = () => {
   //
   const handleSubmit = (e) => {
     const inp = nameRef.current.value;
+    // this si how we get the value in the useRef
     e.preventDefault();
     if (inp === '') return;
     alert(`Name is : ${inp}`);
