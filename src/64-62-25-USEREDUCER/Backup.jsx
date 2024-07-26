@@ -17,6 +17,7 @@ const UseReducer = ({ initialCount = 0 }) => {
   return (
     <>
       <button onClick={handleClickMinus}>-</button>
+      {/* <button onClick={() => setCount((c) => c + 1)}>+</button> */}
       {count}
       <button onClick={handleClick}>+</button>
     </>

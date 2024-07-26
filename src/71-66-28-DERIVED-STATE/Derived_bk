@@ -1,0 +1,39 @@
+import React, { useState } from 'react';
+
+const Derived = () => {
+  const [items, setItems] = useState([1, 2, 3, 4, 5]);
+  const [filteredItems, setFilteredItems] = useState(items);
+  function updateFilteredItem(e) {
+    if (e.target.value === '') {
+      setFilteredItems(items);
+    } else {
+      setFilteredItems(items.filter((item) => item < e.target.valueAsNumber));
+    }
+  }
+
+  return (
+    <>
+      <label htmlFor="lessthan">Show less than</label>
+      <input
+        style={{ border: '1px solid' }}
+        id="lessThan"
+        type="number"
+        onChange={updateFilteredItem}
+      />
+      <br />
+
+      <br />
+      <div>{filteredItems.join(',')}</div>
+
+      <br />
+      <button
+        style={{ background: 'black', color: 'pink' }}
+        onClick={() => setItems((i) => [...i, 2.5])}
+      >
+        Add 2.5 on the list
+      </button>
+    </>
+  );
+};
+
+export default Derived;

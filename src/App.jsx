@@ -40,6 +40,12 @@ import ReactHookForm from './65-REACT-HOOK-FORM/ReactHookForm';
 import Crousel from './66-CROUSEL/Crousel';
 import './index.css';
 import Forms from './59-27-FORM-PROJECT/Forms';
+import Search from './67-SEARCH/Search';
+import Recursion from './68-RECURSION-TREE/Recursion';
+import Context from './69-26-63-USECONTEXT/Context';
+import Storage from './70-64-27-LOCAL-STORAGE/Storage';
+import Derived from './71-66-28-DERIVED-STATE/Derived';
+import AppTodo from './72-69-29-ADVANCED-TODO/AppTodo';
 function App() {
   // 1-return <Called />;
   // 3-return <InputList />;
@@ -80,10 +86,16 @@ function App() {
   // 61-29- return  return <FormOrA />;
   // 62-23
   // 62-23- return <Parent />;
-  // return <UseReducer />;
+  // 64-62-25 return <UseReducer />;
   // 65-REACT-HOOK-return <Index />;
   // 65 return <ReactHookForm />;
   // 66 return <Crousel />;
+  //67 return <Search />;
+  // 68 return <Recursion />;
+  // 69-26-63 return <Context />;
+  // 70-64-27 return <Storage />;
+  // 71-66-28 return <Derived />;
+  return <AppTodo />;
 }
 
 export default App;

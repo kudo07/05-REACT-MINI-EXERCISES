@@ -17,7 +17,8 @@ function reducer(count, action) {
 const UseReducer = ({ initialCount = 0 }) => {
   // reducer function will work the specific tak for the task
   const [count, dispatch] = useReducer(reducer, initialCount);
-
+  // dispatch is also the same like setCount which also a function
+  //  reducer is the function
   //   useReducer(reducer, initialCount, () => {
   //     return count + 1;
   //   });
